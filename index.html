@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Greenden</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="./src/output.css" rel="stylesheet" />
+    
     <link  rel="icon" type="image/x-icon" href="images/GREENDEN-FAVICON.png">
   </head>
   <body>
@@ -16,6 +17,7 @@
       <h1 class="text-2xl">Greenden</h1>
       <svg
         xmlns="http://www.w3.org/2000/svg"
+        id="svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
@@ -39,6 +41,23 @@
         </li>
       </ul>
     </nav>
+
+    <!-- side navbar : -->
+     <section id="sidenav" class="bg-green-100 transition-all transition-transform duration-1000" style="width: 50%; height: 100vh;position: fixed;top:0;right:-50%; z-index: 20; transition: all 1s;">
+      <div class="text-right p-5" style="text-align: right;">
+        <p id="close" class="inline cursor-pointer">X</p>
+      </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600" style="gap: 20px;">
+          <!-- hidden md:flex -->
+        <li><a class="hover:underline hover:text-black" href="#">Home</a></li>
+        <li>
+          <a class="hover:underline hover:text-black" href="Product.html">Products</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="Contact.html">Contact</a>
+        </li>
+      </ul>
+     </section>
 
     <!-- HEADER SECTION :RESPONSIVE  -->
 
@@ -204,5 +223,7 @@
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aliquam, aspernatur recusandae voluptatum et quaerat quibusdam nisi omnis odit dolor..</p>
                <p>© 2021 Greenday.com</p>           
            </section>
+
+           <script src="index.js"></script>
   </body>
 </html>
